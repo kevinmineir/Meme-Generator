@@ -28,25 +28,25 @@ export function MainMemeGenerator() {
             <S.Form>
                 <S.Text>Texto Em Cima</S.Text>       
                 <S.Input
-                  onChange={(e) => SetTopText(e.target.value)}
+                  onChange={(e) => SetTopText(e.target.value, MudarMemeInfo())}
                   name="TopText"
                   type="text" 
                   placeholder="YO MOMMA SO FAT" />       
             </S.Form>
 
-            <S.Form onKeyDown={() => MudarMemeInfo('Bottom')} name='BottomForm'>
+            <S.Form>
                 <S.Text>Texto Em Baixo</S.Text>
                 <S.Input 
                 name='BottomText' 
                 type="text" 
                 placeholder="DORA CAN'T EXPLORE HER" 
-                onChange={(e) => SetBottomText(e.target.value)}
+                onChange={(e) => SetBottomText(e.target.value, MudarMemeInfo())}
                 />
             </S.Form>
         </S.Inputs>
 
         <S.Div>
-           <S.Button onClick={() => SetMemeImg()}>Conseguir Nova Imagem Meme</S.Button>
+           <S.Button onClick={() => SetMemeImg(MudarMemeInfo())}>Conseguir Nova Imagem Meme</S.Button>
         </S.Div>
         
         <Meme MemeImg={MemeInfo.MemeImg} TopText={MemeInfo.TopText} BottomText={MemeInfo.BottomText}/>
