@@ -7,7 +7,7 @@ export function HeaderMemeGenerator() {
         <>
         <S.Header className="header">
             <S.Img src="https://i.imgflip.com/3sa0a7.png" className="Troll Face" />
-            <S.Text className="header-title">Meme Generator</S.Text>
+            <S.Text className="header-title">Gerador De Memes</S.Text>
         </S.Header>
         </>
     )
